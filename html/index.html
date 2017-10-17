@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>twitternlp</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/hero-slider.css">
+        <link rel="stylesheet" href="css/tooplate-style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand scroll-top">
+                        <div class="logo"></div>
+                    </a>
+                </div>
+                <div id="main-nav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#" class="scroll-top">Home</a></li>
+                        <li><a href="#" class="scroll-link" data-id="about">How Does It Work</a></li>
+                        <li><a href="#" class="scroll-link" data-id="portfolio">My Resume</a></li>
+                        <li><a href="#" class="scroll-link" data-id="contact">Contact Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+<body>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+</head>
+<body style="margin:0px; padding:10px;" onload="try_it()">
+    <div id="map_canvas" style="width: 100%; height: 1000px;"></div>
+</body>
+</body>
+
+    <section class="cd-hero">
+        <ul class="cd-hero-slider autoplay">  
+            <li class="selected first-slide">
+                <div class="cd-full-width">
+                    <div class="tm-slide-content-div slide-caption">
+                        <span>Exploring the NLP of Data Science</span>
+                        <h2>twitternlp</h2>
+                        <p style='font-family:veranda;font-size:105%;'><b>The map above shows all tweets made on Twitter that describe a road being flooded. (Since San Francisco rarely floods, most of these heatmap pointers are just tests.) twitternlp scans Twitter for "flooding" terms within tweets and extracts street names and other location information from geolocation metadata when available. Once verified, twitternlp uses the Google Maps API to plot a heatmap.</b></p>
+                        <div class="primary-button">
+                            <a href="#" class="scroll-link" data-id="about">How does it work?</a>
+                        </div>                           
+                    </div>                   
+                </div> 
+            </li>
+
+            <li class="second-slide">
+                <div class="cd-full-width">
+                    <div class="tm-slide-content-div slide-caption">
+                        <span>Tokenization and Grammatical Structure Analysis </span>
+                        <h2>Natural Language Processing</h2>
+                        <p style='font-family:veranda;font-size:105%;'><b>As a tweet enters the twitternlp webapp, it is first cleaned and normalized. With internet lingo removed, it is initially parsed for certain keywords. If found, sequencing of certain grammatical attributes are compared and contrasted. Probabilities are assigned to combinations of "parts of speech" tags and sent through additional verification functions until twitternlp thinks it has found the correct street name.</b></p>
+                        <div class="primary-button">
+                            <a href="#" class="scroll-link" data-id="what-we-do">Show me the code!</a>
+                        </div>                        
+                    </div>                     
+                </div> 
+
+            <li class="third-slide">
+                <div class="cd-full-width">
+                    <div class="tm-slide-content-div slide-caption">
+                        <span>The pipeline behind the scenes</span>
+                        <h2>Data Engineering</h2>
+                        <p style='font-family:veranda;font-size:106%;'><b>The entire process of scanning Twitter and performing NLP processes is carried out by Python. A Python script geocodes the discovered location into coordinates and sends them off into a database. The Javascript function within this webpage will sense an update to the database, pull all new values, and update the static map above.</b></p>
+                        <div class="primary-button">
+                            <a href="#">View Details</a>
+                        </div>                           
+                    </div>                         
+                </div>
+            </li>
+        </ul>
+
+        <div class="cd-slider-nav">
+            <nav>
+                <span class="cd-marker item-1"></span>
+                
+                <ul>
+                    <li class="selected"><a href="#0"></a></li>
+                    <li><a href="#0"></a></li>
+                    <li><a href="#0"></a></li>                        
+                </ul>
+            </nav> 
+        </div> 
+    </section> 
+
+    <div id="about" class="page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h4>Live in SF? Try It Out!</h4>
+                        <div class="line-dec"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item first-service">
+                        <div class="icon"></div>
+                        <h4>Location</h4>
+                        <p>Currently, only San Francisco is being scanned. This is so that I can easily add features and test the geolocation parsing of some of the functions. However, if you have a geolocation enabled device with the Twitter App and would like to see twitternlp in action, please contact me! I can quickly reconfigure the code to your area.</p>
+                    </div>
+                </div>
+                 <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item second-service">
+                        <div class="icon"></div>
+                        <h4>Using Twitter</h4>
+                        <p>Using your Twitter App (Currently twitternlp is only configured for mobile devices) start writing a tweet that would replicate the circumstances of a person posting about a flooded street. Some examples: "OMG Market St is flooding!!", "I just came back from the gym and saw that Tehama St is completely flooded!!!", etc.</p>
+                    </div>
+                </div>
+                 <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item third-service">
+                        <div class="icon"></div>
+                        <h4>Behind the Scenes</h4>
+                        <p>After submitting your tweet, twitternlp will analyze your tweet and extract the street name. A Python script finds the coordinates of the center location of your street using the Google Maps API. Next, it sends them to a NoSQL database where they are separated into latitude and longitude.</p>
+                    </div>
+                </div>
+                 <div class="col-md-3 col-sm-6 col-xs-12">
+                    <div class="service-item fourth-service">
+                        <div class="icon"></div>
+                        <h4>Front End</h4>
+                        <p>A Javascript function embedded within this webapp is constantly listening to the database. Whenever new values are added, they are instantly pulled. The static map feature of the Google Maps API then plots a heatpoint for that center coordinate. The more people tweet that street, the more red the marker will become.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="what-we-do">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="left-text">
+                        <h4>Wanna see my code?<br>It's all on Github. Just for you.</h4>
+                        <p>Initially, this idea came about after seeing the hurricanes in the last couple of months ravage through Texas and Puerto Rico. The news kept mentioning how certain reservoirs were overflowing and unexpectedly flooding streets in a short period of time. This, already adding to the disaster that the heavy rains and strong winds were causing. I figured a website like this would enable people to avoid deadly situations and quickly have a glimpse of the area around them to save friends or loved ones. If even just one person finds this concept helpful in the future, then it was worth it.<br><br>I plan on opening this up to scan the entire United States, and eventually writing up some algorithms that can over time learn which locations to isolate based on trending semantics. A Word2Vec model for greater variety of flooding indications in tweets, is in the near future as well. If you'd like to contribute to this project, feel free to contact me.</p>
+                        <ul>
+                            <li>
+                                <div class="white-button">
+                                    <a href="https://github.com/2check91">Source Code</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="primary-button">
+                                    <a href="https://www.linkedin.com/in/paultluczek/">My LinkedIn</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="right-image">
+                        <img src="img/what-we-do-right-image.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="portfolio" class="page-section">
+        <div class="content-wrapper">
+            <div class="inner-container container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-heading">
+                            <h4>Resume<br>Click the tiles for more info</h4>
+                            <div class="line-dec"></div>
+                        </div>
+                    </div>
+                </div>
+                     <div class="projects-holder">
+                        <div class="row">
+                            <div class="col-md-3 col-sm-6 project-item mix workspace">
+                              <div class="thumb">
+                                  <div class="image">
+                                    <img src="img/portfolio_01.jpg">
+                                  </div>
+                                  <div class="hover-effect">
+                                    <a href="img/portfolio_big_01.jpg" data-lightbox="image-1"><i class="fa fa-search"></i></a>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 project-item mix workspace">
+                              <div class="thumb">
+                                  <div class="image">
+                                    <img src="img/portfolio_02.jpg">
+                                  </div>
+                                  <div class="hover-effect">
+                                    <a href="img/portfolio_big_02.jpg" data-lightbox="image-1"><i class="fa fa-search"></i></a>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 project-item mix technology">
+                              <div class="thumb">
+                                  <div class="image">
+                                    <img src="img/portfolio_03.jpg">
+                                  </div>
+                                  <div class="hover-effect">
+                                    <a href="img/portfolio_big_03.jpg" data-lightbox="image-1"><i class="fa fa-search"></i></a>
+                                  </div>
+                              </div>
+                            </div>
+                            <div class="col-md-3 col-sm-6 project-item mix city">
+                              <div class="thumb">
+                                  <div class="image">
+                                    <img src="img/portfolio_04.jpg">
+                                  </div>
+                                  <div class="hover-effect">
+                                    <a href="img/portfolio_big_04.jpg" data-lightbox="image-1"><i class="fa fa-search"></i></a>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div> 
+    <div id="contact" class="page-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-heading">
+                        <h4>Contact Me</h4>
+                        <div class="line-dec"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="map">
+                        <img src="img/map.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                      <form id="contact" action="" method="post">
+                      <form action="https://formspree.io/paul@bigneural.net" method="POST">
+                        <div class="col-md-6">
+                          <fieldset>
+                            <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
+                          </fieldset>
+                        </div>
+                        <div class="col-md-6">
+                          <fieldset>
+                            <input name="email" type="text" class="form-control" id="email" placeholder="Your email..." required="">
+                          </fieldset>
+                        </div>
+                        <div class="col-md-12">
+                          <fieldset>
+                            <textarea name="message" type="text" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
+                          </fieldset>
+                        </div>
+                        <div class="col-md-12">
+                          <fieldset>
+                            <button type="submit" id="form-submit" class="btn">Send Message</button>
+                          </fieldset>
+                        </div>
+                      </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="copyright-text">
+                        <p>Built by Paul Tluczek. Yup, ^ thats me.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="social-icons">
+                        <ul>
+                            <li>
+                                <a href="https://www.linkedin.com/in/paultluczek/"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        // navigation click actions 
+        $('.scroll-link').on('click', function(event){
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+        // scroll to top action
+        $('.scroll-top').on('click', function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop:0}, 'slow');         
+        });
+        // mobile nav toggle
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+    });
+    // scroll function
+    function scrollToID(id, speed){
+        var offSet = 50;
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $('#main-nav');
+        $('html,body').animate({scrollTop:targetOffset}, speed);
+        if (mainNav.hasClass("open")) {
+            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+            mainNav.removeClass("open");
+        }
+    }
+    if (typeof console === "undefined") {
+        console = {
+            log: function() { }
+        };
+    }
+    </script>
+</body>
+</html>
