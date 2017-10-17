@@ -339,12 +339,6 @@ class twitter_extraction:
         return tags
 
 
-    def make_html(self):
-        gmap = gmplot.GoogleMapPlotter(self.lat,self.lng,18)
-        gmap.heatmap([self.lat], [self.lng], radius=30)
-        gmap.draw("actual_pull.html")
-
-
     def reinit(self):
         self.flood_term = None
         self.flood_index = None
